@@ -5,7 +5,7 @@ FROM nginx:stable-alpine
 RUN rm /etc/nginx/conf.d/default.conf
 
 # Copy custom Nginx configuration created above
-COPY nginx.conf /etc/nginx/conf.d/default.conf
+COPY nginx.conf /etc/nginx/nginx.conf
 
 # Copy the icon files into a subdirectory within the Nginx web root
 # This makes them accessible via http://<server>/icons/
