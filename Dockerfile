@@ -8,8 +8,12 @@ RUN rm /etc/nginx/conf.d/default.conf
 COPY nginx.conf /etc/nginx/conf.d/default.conf
 
 # Copy the icon files into a subdirectory within the Nginx web root
-# This makes them accessible via http://<server>/icons/
+# This makes them accessible via http://<server>/protocol-icons/
 COPY ./icons /usr/share/nginx/html/protocol-icons
+
+# Copy the background images into a subdirectory within the Nginx web root
+# This makes them accessible via http://<server>/protocol-backgrounds/
+COPY ./backgrounds /usr/share/nginx/html/protocol-backgrounds
 
 # Expose port 80 (the default Nginx port)
 EXPOSE 80
