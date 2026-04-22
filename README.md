@@ -17,4 +17,4 @@ When adding a new protocol, include both an icon and a background image that mee
 - **Dimensions:** 1152 × 648 px (16:9)
 - **File size:** under 500 KB
 
-Use the protocol's name as the filename (e.g. `soroswap.png`) and keep it identical between the `icons/` and `backgrounds/` directories.
+Use the protocol's name as the filename in lowercase kebab-case (e.g. `soroswap.png`, `soroban-domains.png`) and keep it identical between the `icons/` and `backgrounds/` directories.
