@@ -1,5 +1,5 @@
 # Use the official Nginx image based on Alpine Linux - lightweight and good for K8s
-FROM nginx:stable-alpine
+FROM nginx:1.30.7-alpine
 
 # Remove default Nginx server configuration
 RUN rm /etc/nginx/conf.d/default.conf
